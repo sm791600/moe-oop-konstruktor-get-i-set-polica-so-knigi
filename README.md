@@ -1,0 +1,1 @@
+# moe-oop-konstruktor-get-i-set-polica-so-knigi
