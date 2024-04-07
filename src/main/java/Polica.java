@@ -19,15 +19,40 @@ import java.util.Scanner;
 		this.pages=pages;
 	}
 	
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public int getPages() {
+		return pages;
+	}
+	public void setPages(int pages) {
+		this.pages = pages;
+	}
+	public void pecatiInfo() {
+		System.out.println("title: "+title+", author: "+author+", pages: "+pages);
+	}
 }
 public class Polica {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		
-		
-		
+		Kniga kn1 = new Kniga(); //
+		Kniga kn2 = new Kniga("Java for Dummies","Barry A. Burd", 123);
+		kn1.pecatiInfo();
+		kn2.pecatiInfo();
+		kn1.title="Pride and Prejudice";
+		kn1.author="Jane Austen";
+		kn1.pages=41;
+		kn1.pecatiInfo();
 		
 	}
 }
